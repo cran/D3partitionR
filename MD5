@@ -1,0 +1,13 @@
+b1358f275b30bac30111d1687bd65303 *DESCRIPTION
+4dd92c7d754717cb7c55237e697e7efe *LICENSE
+199d3fc9028e05001a6bf4c714cc453f *NAMESPACE
+9ad752515238b33c7b88de06ebe3047d *R/AdditionalFunctions.R
+4dd9e1e39018f6587996cf36d892a396 *R/D3partitionR.R
+78c40ebfdd46f70701c880d5b7d10159 *inst/htmlwidgets/D3partitionR.js
+17b487455cba4f09718073e1690fd8ed *inst/htmlwidgets/D3partitionR.yaml
+76690c679580320bc8247ff2c20ed479 *inst/htmlwidgets/lib/d3/LICENSE
+a57a2830fa0d08051309d2fed4428d1f *inst/htmlwidgets/lib/d3/README.md
+916cebd885900dcf74aade406f9beae8 *inst/htmlwidgets/lib/d3/d3.min.js
+f6bd905958520b06199aa973fc4b6982 *inst/htmlwidgets/lib/style/circle.css
+e28abc9b87f2532fa897db18da8c875c *man/D3partitionR-shiny.Rd
+76138fc7d0881e62d5876e5cbeb4cdd1 *man/D3partitionR.Rd
