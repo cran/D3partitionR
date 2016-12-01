@@ -1,5 +1,4 @@
 library(htmlwidgets)
-
 #' D3partitionR
 #'
 #' This function generates the partition chart from your data or from random data
@@ -32,6 +31,7 @@ library(htmlwidgets)
 #'                        When setted to sequential, the steps with a color provided are used as a reference. The further a steps from these reference, the darker.\cr 
 #'                  - color, Coerce the colors of some steps. Notice: only the colors provided in these are going to be shown in the legend.\cr 
 #'                  - style: A CSS string to change the legend style ex:"opacity:0;"
+#' @param trail A boolean to draw or not the sequence trail. Default to false.
 #' @param labelStyle A CSS string to change the labels style
 #' @param specificOptions Options speficic to some king of charts\cr 
 #'                  - collapsibleIndentedTree: list(bar=T), to true if you want to have bars proportional to the size of the step
@@ -50,14 +50,16 @@ library(htmlwidgets)
 #' legend=list(type="categorical",color=list("step A"="#0BA","step B"="#AA1","step C"="#ECC")))
 #' 
 #' 
+#' 
 D3partitionR <- function(random=F,
                          data=NULL, 
                          type='circleTreeMap',
                          tooltipOptions=list(showAbsolutePercent=T,showRelativePercent=T),
                          width = NULL, height = NULL, elementId = NULL,
                          Input=list(enabled=F,id="unique_id",clickedStep=T,currentPath=T,visiblePaths=T,visibleLeaf=T,visibleNode=T),
-                         title=list(text=NULL,fontSize="auto"),
-                         legend=list(type='categorical',color=NULL),
+                         title=list(text=NULL,fontSize="auto",no_draw=TRUE),
+                         legend=list(no_show=TRUE),
+                         trail=FALSE,
                          labelStyle=NULL,
                          specificOptions=NULL) {
 
@@ -87,6 +89,7 @@ D3partitionR <- function(random=F,
     Input=Input,
     width=width,
     height=height,
+    trail=trail,
     labelStyle=labelStyle,
     specificOptions=specificOptions
   )
@@ -120,7 +123,7 @@ D3partitionR <- function(random=F,
 #' @name D3partitionR-shiny
 #'
 #' @export
-D3partitionROutput <- function(outputId, width = '100%', height = '400px'){
+D3partitionROutput <- function(outputId, width = '100%', height = '700px'){
   htmlwidgets::shinyWidgetOutput(outputId, 'D3partitionR', width, height, package = 'D3partitionR')
 }
 
