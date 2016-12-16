@@ -1,6 +1,6 @@
 Package: D3partitionR
 Title: Plotting D3 Hierarchical Plots in R and Shiny
-Version: 0.3.0
+Version: 0.3.1
 Authors@R: c(person("Antoine", "GUILLOT", email = "antoine.guil@outlook.fr", role ="cre"),
       person(
         "Mike", "Bostock"
@@ -22,7 +22,7 @@ LazyData: true
 RoxygenNote: 5.0.1
 Imports: htmlwidgets, stats
 NeedsCompilation: no
-Packaged: 2016-12-01 09:43:25 UTC; Antoi
+Packaged: 2016-12-16 18:19:19 UTC; Antoi
 Author: Antoine GUILLOT [cre],
   Mike Bostock [aut, cph] (d3.js library in htmlwidgets/lib,
     http://d3js.org. The partitionChart, sunburst, the treemap, the
@@ -36,4 +36,4 @@ Author: Antoine GUILLOT [cre],
   Bootstrap contributor [cph] (Bootstrap contributors)
 Maintainer: Antoine GUILLOT <antoine.guil@outlook.fr>
 Repository: CRAN
-Date/Publication: 2016-12-01 19:44:20
+Date/Publication: 2016-12-16 19:50:02
